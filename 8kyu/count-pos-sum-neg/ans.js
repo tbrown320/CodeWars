@@ -8,6 +8,10 @@
 
 function countPositivesSumNegatives(input) {
   // your code here
+  //ensure there is an input or return an empty array
+  if (!input || input.length === 0) {
+    return [];
+  }
   let count = 0
   let negSum = 0
   for (let i = 0; i < input.length; i++){
